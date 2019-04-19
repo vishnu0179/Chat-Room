@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <style>
+        *{font-size: 23px;        }
+        #chat {position: fixed; padding-bottom: 15px; bottom: 0; width: 100%;}
+        #send_btn {color: aqua;}
+        #onlineUsers {display: none;}
+    </style>
+    
+</head>
+<body>
+    <div id="login">
+        <input type="text" placeholder="username" id="username">
+        <button id="login-btn">Login</button>
+    </div>
+    
+    <div id= 'onlineUsers'>
+        <h3>Online Users</h3>
+        <ul id="userList">
+            
+        </ul>
+    </div>
+
+    <div id="chat" style="display : none; margin: 10px;" >
+        <input type="text" placeholder="recipient" id ='recipient'>
+        <input type="text" style="width: 90%" placeholder="Enter Message" id="msg_input">
+        <button id="send_btn" >SEND</button>
+        <ul id = "msg">
+        
+        </ul>
+    </div>
+    
+    
+</body>
+</html>
